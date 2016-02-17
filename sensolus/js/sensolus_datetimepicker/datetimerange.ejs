@@ -1,0 +1,46 @@
+<div style="display:inline-block">
+	<div style="margin:5px">
+		<select name="to_span" style="width:195px">
+			<option value="1">1 hour before</option>
+			<option value="2">2 hours before</option>
+			<option value="4">4 hours before</option>
+			<option value="8">8 hours before</option>
+			<option value="12">12 hours before</option>
+			<option value="24">1 day before</option>
+			<option value="48">2 days before</option>
+			<option value="72">3 days before</option>
+			<option value="96">4 days before</option>
+			<option value="120">5 days before</option>
+			<option value="240">10 days before</option>
+			<option value="360">15 days before</option>
+			<option value="720">1 month before</option>
+			<option id="unknown_to" value="">--- a historic date before ---</option>
+		</select>
+	</div>
+	<div id="rangepicker_to<%= id %>"></div>
+</div>
+<div style="display:inline-block">
+	<div style="margin:5px">
+		<select name="from_span" style="width:195px">
+			<option value="0">This moment</option>
+			<option id="unknown_from" value="">--- custom date---</option>
+		</select>
+	</div>
+	<div id="rangepicker_from<%= id %>"></div>
+</div>
+<div style="display:inline-block; width:160px; vertical-align:top">
+	<div style="height:275px; overflow:hidden; margin-top:30px">
+		<a href="javascript:void(0)" value="today" class="list-item">Today</a>
+		<a href="javascript:void(0)"  value="yesterday" class="list-item">Yesterday</a>
+		<a href="javascript:void(0)"  value="last7days" class="list-item">Last 7 days</a>
+		<a href="javascript:void(0)"  value="thisweek" class="list-item">This week</a>
+		<a href="javascript:void(0)"  value="lastweek" class="list-item">Last week</a>
+		<a href="javascript:void(0)"  value="last30days" class="list-item">Last 30 days</a>
+		<a href="javascript:void(0)"  value="thismonth" class="list-item">This month</a>
+		<a href="javascript:void(0)"  value="lastmonth" class="list-item">Last month</a>
+	</div>
+	<div>
+		<button class="btn btn-success" type="button">Apply</button>
+		<button class="btn btn-danger" type="button">Close</button>
+	</div>
+</div>

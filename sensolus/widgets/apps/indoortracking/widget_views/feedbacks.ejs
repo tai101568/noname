@@ -1,0 +1,34 @@
+<form id="feedbacks" class="mws-form">
+    <div id="mws-validate-error" class="mws-form-message error" style="display:none;"></div>
+    <div class="mws-form-inline">
+    	<div class="mws-form-row">
+            <label class="mws-form-label">Feedback type</label>
+            <div class="mws-form-item">
+                <select class="required" name="type">
+                	<option>Bug report</option>
+                    <option>Great idea</option>
+                    <option>Feature request</option>
+                    <option>Other</option>
+                </select>
+            </div>
+        </div>
+        <div class="mws-form-row">
+            <label class="mws-form-label">Descriptions</label>
+            <div class="mws-form-item">
+                <textarea name="descriptions" class="large required" cols="" rows="" style="word-wrap: break-word; resize: none; height: 200px;"></textarea>
+            </div>
+        </div>
+         <div class="mws-form-row">
+            <label class="mws-form-label">Your name</label>
+            <div class="mws-form-item">
+                <input name="name" class="required large" type="text">
+            </div>
+        </div>
+        <div class="mws-form-row">
+            <label class="mws-form-label">Your email</label>
+            <div class="mws-form-item">
+                <input name="email" class="required email large" type="text">
+            </div>
+        </div>
+    </div>
+</form>

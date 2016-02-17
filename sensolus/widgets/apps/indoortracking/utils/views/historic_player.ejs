@@ -1,0 +1,20 @@
+<span class="form_row">
+	<label style="font-weight:bold;">Time: </label><input style="width:100%" type="text" name="time_filter" value="Now" readonly />
+</span>
+
+<span class="form_row">
+<center>
+	<button type="button" name="prev-min">&lt;Prev 2m</button>
+	<button type="button" name="stop_play_history" title="Stop and switch to realtime mode" disabled><i class="icon-stop"></i></button>
+	<button type="button" name="play_history" title="Click to play"><i class="icon-play"></i></button>
+	<button type="button" name="next-min">Next 2m&gt;</button>
+</center>
+</span>
+
+<span class="form_row" id="play_speed_controls" style="display:none">
+<center>
+	<button type="button" name="decrease_speed">-</button>
+	<input type="text" name="play_speed" value="2 mins" style="width:65px" title="Play speed: minutes per shot" />
+	<button type="button" name="increase_speed">+</button>
+</center>
+</span>

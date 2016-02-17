@@ -1,0 +1,31 @@
+<div style="margin: 15px">
+	<center><h4 style="margin-bottom:30px">Locations Report</h4></center>
+	
+	<form id="form_filters">
+		<span class="form_row">
+			<label style="font-weight:bold;">Time Range:&nbsp;</label><input type="text" name="from_date" value="Now" readonly style="width:100%" />
+		</span>
+		<span class="form_row" style="visibility: hidden;">
+			<input type="checkbox" name="chck_show_paths_density" style="margin: 10px" /><label>Display paths density</label>
+		</span>
+		<span class="form_row">
+			<span style="font-weight:bold; float:left">Beacons:</span>
+			<span style="float:right">
+				<a class="select_all" href="javascript:void(0)">All, </a>
+				<a class="select_none" href="javascript:void(0)">None, </a>
+				<a class="select_invert" href="javascript:void(0)">Invert</a>
+			</span>
+		</span>
+		<hr class="form_row" style="margin:4px" />
+		<div style="position:absolute; top:180px;bottom:1px; width:230px;margin-top:0px;overflow:auto">
+			
+			<% for(var i=0; i<beacons.length; i++) {%>
+				<span class="form_row" style="margin-left:15px">
+				<input checked="true" name="beacons" type="checkbox" value="<%= beacons[i].id %>">
+				<img src="<%= beacons[i].img %>" style="max-width:32px; height:auto" />
+				<label><%= beacons[i].name %></label>
+				</span>
+			<% } %>
+		</div>
+	</form>
+</div>

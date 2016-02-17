@@ -1,0 +1,27 @@
+<form id="form_location_table">
+	<span class="form_row">
+		<select name="select_report_type">
+			<option value="#location_chart">Time spent per location</option>
+			<option value="#location_table">Detailed visits </option>
+		</select>
+		<!-- The first element in form is automatically focus, so it make datetimepicker open automatically. This is to prevent that  -->
+		<input style="height:0px; top:-1000px; position:absolute" type="text" value="" />
+		<label>&nbsp;&nbsp;&nbsp;Within:&nbsp;&nbsp;</label><input type="text" name="from_date" value="Now" readonly style="width:330px" />
+	</span>
+</form>
+<div style="display:block" style="width:100%;background-color:red" id="location_chart" class="graph_canvas"></div>
+<div style="display:none" style="width:100%" id="location_table" class="graph_canvas">
+	<table class="mws-datatable-fn mws-table" style="margin-top:10px">
+	    <thead>
+			<tr>
+				<th>Arrived at</th>
+				<th>Time spent</th>
+				<th>Location Name</th>
+	        </tr>
+	    </thead>
+    <tbody>
+    </tbody>
+</table>
+</div>
+
+

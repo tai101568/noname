@@ -1,0 +1,64 @@
+@import url("floorplan.css");
+
+.popup_element { 
+	display:none;
+	border: 1px solid #CCC;
+	background-color:rgb(255,255,255);
+	padding:10px;
+	border-radius: 6px;
+	box-shadow: 2px 2px 2px #888888 
+}
+
+a.list-item {
+	display:block;
+	margin: 6px 0px 6px 7px; 
+	background-color: #f4f4f4;
+	border-radius: 6px;
+	padding: 3px 10px 3px 10px;
+	background-position: 0px -15px
+}
+
+a.list-item {
+	display:block;
+	margin: 6px 0px 6px 7px; 
+	background-color: #f4f4f4;
+	border-radius: 6px;
+	padding: 3px 10px 3px 10px;
+	background-position: 0px -15px
+}
+
+a.list-item:hover {
+	background-color: #4386BC;
+}
+
+.ui-tabs-vertical { width: 330px }
+.ui-tabs-vertical .ui-tabs-nav { padding: 2px 2px 2px 2px; float: left; width: 70px }
+.ui-tabs-vertical .ui-tabs-nav li { clear: left; width: 100%; border-bottom-width: 1px !important; border-right-width: 0 !important; margin: 0 -1px 1px 0; }
+.ui-tabs-vertical .ui-tabs-nav li a { display:block; }
+.ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active { padding-bottom: 0; padding-right: 2px; border-right-width: 1px; }
+/* .ui-tabs-vertical .ui-tabs-panel { float:right} */
+
+.ui-tabs .ui-tabs-panel {padding: 0px; margin:0px}
+
+.tracking_control_panel { height:100%; background-color:rgb(123, 237, 240); overflow:auto}
+.tracking_control_panel .form_row { display:block; clear:both; margin:4px }
+
+.ui-datepicker {background-color:rgb(123, 143, 150)}
+
+.date_highlight { background-color:rgb(234, 212, 245) }
+
+.tracking_control_panel .position_marker_icon { display: inline-block; vertical-align: middle; margin:5px; width: 32px; height: 32px; background-image: url(../images/position_marker_green.png); background-size: 32px}
+.tracking_control_panel .position_name_marker_icon { display: inline-block; vertical-align: middle; margin:5px; width: 32px; height: 32px; background-image: url(../images/position_name_marker.png); background-size: 32px}
+.tracking_control_panel .position_marker_region { display: inline-block; vertical-align: middle; margin:5px; width: 32px; height: 32px; background-image: url(../images/position_circle.png); background-size: 32px}
+.tracking_control_panel .sensor_marker_icon { display: inline-block; vertical-align: middle; margin:5px; width: 32px; height: 32px; background-image: url(../images/radiolocator.png); background-size: 32px}
+
+#beacons_location_table_popup .popup_container:after {
+content: ' ';
+	height: 0;
+	position: absolute;
+	width: 0;
+    left:0px;
+    top:200px;
+	border: 10px solid transparent;
+	border-right-color: rgb(234,173, 0);
+}

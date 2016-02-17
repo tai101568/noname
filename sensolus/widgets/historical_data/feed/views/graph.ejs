@@ -1,0 +1,18 @@
+<div id="feed_graph" class="mws-panel grid_8" style="min-height:500px">
+	<div id="loading-indicator">Loading...</div>
+    <div class="mws-tabs" style="display:none">
+
+        <ul>      
+	        <%for(var i = 0; i < dataTypeProperties.length ; i++){%>
+	        	<li><a href="#<%=dataTypeProperties[i].key%>"><%=dataTypeProperties[i].description%></a></li>
+			<%}%>
+        </ul>
+        
+        	<%for(var i = 0; i < dataTypeProperties.length ; i++){%>
+		        <div id="<%=dataTypeProperties[i].key%>">
+		       		 <div id="graph_container_<%=dataTypeProperties[i].key%>" style="height: 500px; min-width: 500px;width:90%"></div>    
+		        </div>
+			<%}%>
+			
+    </div>
+</div>

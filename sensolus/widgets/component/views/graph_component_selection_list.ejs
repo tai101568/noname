@@ -1,0 +1,32 @@
+<br>
+<div class="mws-panel-header" style="background-color:gray;">
+  	<span>
+  		<div style="float: left;">
+  			<i class="<%= widgetIconClass %>"></i> &nbsp;&nbsp;&nbsp;<%= widgetTitle %>  
+  		</div>
+
+	</span>
+</div>
+        
+  
+<div class="mws-panel-body no-padding" style="background-color:gray;">
+	<div id="grid-warning-panel" class="mws-form-message warning" style="display:none;"></div>
+	<table class="mws-datatable-fn mws-table">
+	    <thead>
+			<tr>
+				<%for(var i = 0; i < columns.length ; i++){%>
+					<th>
+						<%== columns[i].title%>
+					</th>
+				<%}%>
+	            
+	        </tr>
+	    </thead>
+	    <tbody>
+	
+	       
+	    </tbody>
+	</table>
+</div>                        
+                        
+               

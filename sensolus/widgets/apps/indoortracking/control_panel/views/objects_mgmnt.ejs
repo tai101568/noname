@@ -1,0 +1,50 @@
+<div style="margin: 15px">
+	<center><h4 style="margin-bottom:30px">Find objects and track</h4></center>
+	
+	<form>
+		<div id="historic_controls"></div>
+		<span style="position:absolute; top:180px; width:230px;margin-top:0px;">
+			<span style="font-weight:bold; float:left">Beacons:</span>
+			<span style="float:right">
+				<a class="select_all" href="javascript:void(0)">All, </a>
+				<a class="select_none" href="javascript:void(0)">None, </a>
+				<a class="select_invert" href="javascript:void(0)">Invert</a>
+			</span>
+			<hr class="form_row" style="margin:4px" />
+		</span>
+		<div style="position:absolute; top:200px;bottom:1px; width:230px;margin-top:0px;overflow:auto">
+			<% for(var i=0; i<beacons.length; i++) {%>
+				<span class="form_row" style="margin-left:15px">
+					<span style="float:left;width:175px;margin:2px 0px 2px 0px">
+						<input id="beacon_<%= beacons[i].id %>" checked name="beacons" type="checkbox" value="<%= beacons[i].id %>">
+						<img src="<%= beacons[i].img %>" style="max-width:32px; height:auto" />
+						<label id="lbl_<%= beacons[i].id %>"><%= beacons[i].name %></label>
+					</span>
+					<a id="icol_<%= beacons[i].id %>" title="Click to show location history" style="float:right;margin-top:10px" href="javascript:void(0)" class="beacon-show-history icol-chart-pie"></a>
+				</span>
+			<% } %>
+		</div>
+	</form>
+</div>
+
+<div id="beacons_option_menu_popup" style="width:300px;display:none; background-color:rgb(134, 255, 100); padding: 5px;">
+	<center><h4>Location visits</h4></center>
+	<div style="margin:10px">
+		<div id="beacon-visit-info"></div>
+		<div style="display:block">
+			<span style="display:block">
+				<span>Show Trip: </span>
+				<select name="beacon_time_track_selection">
+					<option value="">--- select one ---</option>
+					<option value="10">Last 10 minutes</option>
+					<option value="20">Last 20 minutes</option>
+					<option value="30">Last 30 minutes</option>
+					<option value="45">Last 45 minutes</option>
+					<option value="60">Last 1 hour</option>
+					<option value="120">Last 2 hours</option>
+					<option value="240">Last 4 hours</option>
+				</select>
+			</span>
+		</div>
+	</div>
+</div>
